@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Form validation</title>
 </head>
+
 <body>
-<script src="js/index.js"></script>    
+    <div class="container">
+        <div class="header">
+            <h2>Registration Form && Validation</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>User Name</label>
+                <input type="text" class="input_field" name="" placeholder="Enter your name " id="username" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-control">
+                <label>Mail</label>
+                <input type="email" class="input_field" name="" placeholder="Enter your email " id="email" autocomplete="off">
+                <i class="glyphicon glyphicon-ok-circle"></i>
+                <i class="glyphicon glyphicon-ban-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-control">
+                <label>Phone</label>
+                <input type="text" class="input_field" name="" placeholder="Enter your phone " id="phone" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" class="input_field" name="" placeholder="Enter your password " id="password" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="password" class="input_field" name="" placeholder="Enter your password " id="cpassword">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <button class="btn" id="submit" onclick="formSubmit()">Submit</button>
+        </form>
+    </div>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
