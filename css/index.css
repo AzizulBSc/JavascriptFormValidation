@@ -5,9 +5,11 @@
 }
 :root {
     --myfont:'Mulish',sans-serif;
-    --my-btn-color: 'Montserrat', sans-serif;
+    --my-btn-color: 'Montserrat', sans-serif; 
     --lg-lightcolor:linear-gradient(to left, rgba(116,235,213,0.6),rgba(159,172,230,0));
-    --lg-color:linear-gradient(to left,#74ebd5,#9face6);
+    --lg-color:linear-gradient(to left,#0bab64,#9baaee);
+    --lg-color1:linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    --lg-color2:linear-gradient(315deg, #2884b8 0%, #d1bad2 74%);
 }
 body {
     background-image:url('http://127.0.0.1:5500/bgimage.jpg'),var(--lg-color);
@@ -24,7 +26,7 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   -webkit-border-radius:10px;
-  box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034), 0 6.7px 5.3px rgba(0,0,0,0,048),0 12.5px;
+  box-shadow: 20px 8px 30px;
   overflow: hidden;
   width:calc(100vw - 65vw);
   max-width: 100%;
@@ -55,12 +57,27 @@ body {
     transition: all 1s ease;
 
 }
+
+.form .footer{
+    background:var(--lg-color2);
+    border-radius: 3px;
+    border:none;
+    color:#fff;
+    display: block;
+    font:var(--my-btn-font);
+    font-size: 13px;
+    padding: 15px 5px;
+    margin-top:20px;
+    width: 100%;
+    text-transform:uppercase;
+    transition: all 1s ease;
+
+}
 .form {
     padding: 40px;
 }
 .form-control{
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 30px;cl
 }
 .form-control label{
     display: inline-block;
@@ -84,10 +101,10 @@ body {
     background:linear-gradient(to rigth, #74ebd5,#9face6);
 }
 
-.form-control .success input{
+.form-control.success input{
     border-color:#2ecc71;
 }
-.form-control .error input{
+.form-control.error input{
     border-color:#e74c3c;
 }
 .form-control i{
@@ -112,7 +129,6 @@ body {
 .form-control small{
     visibility: hidden;
     color:#e74c3c;
-    bottom:0;
     left: 0;
     position:absolute;
 }
